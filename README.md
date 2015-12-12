@@ -9,13 +9,14 @@ A Navigational reference for smart travelling and crowd-sourcing app for crime r
 ## Tech Used
 * Google Maps API
 * Heatmaps JS
-* Bootstrap
 * Javascript
 * Express JS
 * Angular JS
 * Node JS
 * Marker Clusterer JS
 * jQuery
+* Google Places
+* Polymer
 
 ## Data Used
 * PNP Data for NCR
