@@ -2,8 +2,8 @@
 A Navigational reference for smart travelling and crowd-sourcing app for crime reporting.
 
 ## Screenshots
-![Screenshot #1](https://raw.githubusercontent.com/memerr/Street-Smart/master/screenshots/Screenshot%231.png)
-![Screenshot #2](https://github.com/memerr/Street-Smart/blob/master/screenshots/Screenshot%232.png?raw=true)
+![Screenshot #1](https://github.com/memerr/Street-Smart/blob/master/screenshots/Screenshot%232.png?raw=true)
+![Screenshot #2](https://raw.githubusercontent.com/memerr/Street-Smart/master/screenshots/Screenshot%231.png)
 
 ## How to run:
 * Navigate to the project folder
@@ -22,17 +22,16 @@ A Navigational reference for smart travelling and crowd-sourcing app for crime r
 * Google Places
 * Polymer
 
-## Data Used
+## Data to be used
 * PNP Data for NCR
 * Data.gov.ph
 
 ## Credits
-
-* Jimson Sulit - Pitcher, Project Manager, Darth Vader
-* Karol Pedrosa - Designer, Researcher, Cheerer, Princess Leia
-* Zishran Julbert Garces - Backend Developer, Chewy
-* Gabriel Faustine Dimapawi - Designer, Ideationist, Stormtrooper
-* Ricardo Raphael Joson - Front-end and Back-end Developer, Kylo Ren
+* Jimson Sulit - Pitcher, Project Manager
+* Karol Pedrosa - Designer, Researcher
+* Zishran Julbert Garces - Backend Developer
+* Gabriel Faustine Dimapawi - Designer, Ideationist
+* Ricardo Raphael Joson - Front-end and Back-end Developer
 
 ## License
 Copyright (c) 2015 Jimson Sulit, Gabriel Dimapawi, Karol Pedrosa, Zishran Garces, Ricardo Raphael Joson
