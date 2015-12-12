@@ -165,7 +165,7 @@ app.controller('index-controller', function ($scope, $http) {
 				$scope.report.latitude = document.getElementById("latbox").value;
 				$scope.report.longitude = document.getElementById("lngbox").value;
 				$http.post('/addcoordinates', $scope.hello);
-				window.location = "/map.html";
+				window.location = "/index.html";
 			};
 	});
 
@@ -313,7 +313,7 @@ app.controller('form-controller', function ($scope, $http) {
 		$scope.report.latitude = document.getElementById("latbox").value;
 		$scope.report.longitude = document.getElementById("lngbox").value;
 		$http.post('/addcoordinates', $scope.report);
-		window.location = "/map.html";
+		window.location = "/index.html";
 	};
 });
 

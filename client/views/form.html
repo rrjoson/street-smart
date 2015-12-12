@@ -46,7 +46,7 @@
   </div> -->
    <paper-header-panel style="background-color: #eee;" ng-controller="form-controller">
         <paper-toolbar>
-          <a href="map.html" class="white"><paper-icon-button icon="arrow-back"></paper-icon-button></a>
+          <a href="index.html" class="white"><paper-icon-button icon="arrow-back"></paper-icon-button></a>
         </paper-toolbar>
         <div class="card-container">
           <paper-card class="crime-form">
@@ -57,29 +57,6 @@
 
             <paper-input id="due_input" label="Date" type="date" value=" " ng-model="report.time" required></paper-input>
             <paper-input label="Type of Crime" ng-model="report.crime" value="Homicide/Kidnapping/Robbery" required></paper-input>
-
-            <!-- <paper-dropdown-menu label="Type of Crime" ng-model="report.crime" required>
-              <paper-menu class="dropdown-content">
-                <paper-item>Kidnapping</paper-item>
-                <paper-item>Homicide</paper-item>
-                <paper-item>Robbery</paper-item>
-              </paper-menu>
-            </paper-dropdown-menu>
-
-            <paper-dropdown-menu label="My Items">
-                   <paper-dropdown class="dropdown">
-                       <paper-menu class="menu" ng-model="my.item">
-
-                           <paper-item ng-repeat="item in items" name="{{item.name}}">
-                               {{item.name}}
-                           </paper-item>
-
-
-                       </paper-menu>
-                   </paper-dropdown>
-               </paper-dropdown-menu> -->
-
-
 
             <paper-input id="pac-input2" type="text" label="Search Location"></paper-input>
             <div class="form-map" id="map" style="width:100%; height: 50%"></div>
@@ -104,16 +81,5 @@
   <script type="text/javascript" src="/client-controllers/app.js"></script>
   <script type="text/javascript" src="/client-controllers/client-controller.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-  <script type="text/javascript">
-    paperMenu: {
-       ngModel: {
-           primitive: "selected"
-       },
-       ngTap: {
-           event: "core-activate"
-       }
-    }
-
-  </script>
 </body>
 </html>
