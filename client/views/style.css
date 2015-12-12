@@ -1,0 +1,415 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url(fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url(fonts/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: "Oswald-Regular";
+    src: url(fonts/Oswald-Regular.ttf);
+}
+
+
+html,
+body {
+	width: 100%;
+	box-sizing: border-box;
+	font-family: "Roboto";
+	color: black;
+	font-size: 62.5%;
+}
+
+a {
+	transition: all ease-in 0.2s;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+.row1 {
+	height: 450px;
+	background-color: #4aa3df;
+	overflow: hidden;
+}
+
+.row2 {
+	background-color: #1abc9c;
+	position: relative;
+}
+
+.title {
+	text-align: center;
+	font-size: 5.6rem;
+	margin-top: 380px;
+}
+
+.img-container {
+	width: 320px;
+	position: absolute;
+	margin-top: 190px;
+	margin-left: 170px;
+}
+
+.logo {
+	width: 100%;
+}
+
+.subtitle {
+	text-align: center;
+	font-size: 2.8rem;
+}
+
+.cta {
+	font-size: 2.8rem;
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 15px 25px;
+	margin-top: 125px;
+	transition: all ease-in 0.2s;
+}
+
+.cta:hover {
+	text-decoration: none;
+}
+
+.cta-1 {
+	float: right;
+}
+
+.cta-2 {
+	float: left;
+}
+
+.footer {
+	text-align: center;
+	font-size: 2.0rem;
+	display: table;
+ 	margin: 0 auto;
+}
+
+#footer {
+	margin-top: 130px;
+	padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .cta-1 {
+		float: none;
+		margin: 75px auto 10px auto;
+		display: table;
+	}
+
+	.cta-2 {
+		float: none;
+		margin: 15px auto;
+		display: table;
+	}
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar1 {
+	width: 50%;
+	height: 90px;
+	background-color: #1abc9c;
+	display: flex;
+	align-items: center;
+	z-index: 100;
+}
+
+.navbar2 {
+	width: 50%;
+	height: 90px;
+	background-color: #4aa3df;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	z-index: 23;
+}
+
+.hamburger {
+	font-size: 50px;
+	color: white;
+	padding: 20px 30px 30px 30px;
+}
+
+.hamburger:hover {
+	text-decoration: none;
+}
+
+.links {
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+}
+
+.navbar2 {
+	margin-right: 0;
+}
+
+.add-margin-right-20px {
+	margin-right: 20px;
+}
+
+.search-bar {
+	top: 10px;
+	background-color: white;
+	z-index: 100;
+	color: black;
+	padding-left: 40px;
+	width: 350px;
+	height: 70px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	font-size: 3.0rem;
+	z-index: 1000;
+}
+
+#push-menu {
+	position: absolute;
+	width: 400px;
+	background-color: #1abc9c;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+	padding-top: 100px;
+	transition: all ease-in 0.2s;
+}
+
+.profile-pic {
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	margin: 0 auto;
+	border: 5px solid white;
+}
+
+.profile-name {
+	margin: 20px auto;
+	width: 200px;
+}
+
+.profile-nav {
+	border-top: 3px solid white;
+	margin: 20px 15px;
+}
+
+.profile-nav a {
+	display: block;
+	font-size: 3.2rem;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.profile-nav .logout {
+	margin-top: 200px;
+}
+
+.report-crime-body {
+	margin-top: -30px;
+	background-color: #4aa3df;
+	width: 100%;
+	height: 150%;
+}
+
+.report-crime-body h1 {
+	text-align: center;
+	font-size: 4.0rem;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.report-crime-body p,
+.report-crime-body input {
+	display: inline-block;
+}
+
+.report-crime-body p {
+	font-size: 3.8rem;
+	margin-bottom: 0;
+	float: right;
+	margin-bottom: 20px;
+}
+
+.report-crime-body .date {
+	margin-left: 10px;
+	padding: 5px;
+	width: 500px;
+	color: black;
+	font-size: 3.0rem;
+}
+
+
+.color-black {
+	color: black;
+}
+
+.hide {
+	opacity: 0;
+	transition: all ease-in 0.2s;
+}
+
+.geo-button {
+	font-size: 3.0rem;
+	margin-left: 730px;
+	margin-bottom: 15px;
+	color: #4aa3df;
+	border-radius: 20px;
+	background-color:  white;
+	border: none;
+	border: 1px solid #4aa3df;
+	padding: 15px 50px;
+}
+
+.description {
+	margin-top: 20px;
+}
+
+/*.geo-button2 {
+	position: absolute;
+	background-color: white;
+	height: 60px;
+	width: 100px;
+	z-index: 9000;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-left: 1050px;
+	border: none;
+	border: 1px solid white;
+	color: black;
+	font-size: 16px;
+	margin-top: 15px;
+}*/
+
+
+#pac-input {
+  background-color: #fff;
+  color: black;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+#target {
+  width: 345px;
+}
+
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.report-btn {
+	font-size: 1.6rem !important;
+	margin: 0 6em !important;
+	margin-top: 20px !important;
+	background-color: white !important;
+}
+.remove-text-decoration {
+	color: black;
+}
+.white {
+	color: white;
+}
+
+.card-container {
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.title-text {
+	padding: 16px;
+	font-size: 24px;
+	color: #e91e63 !important;
+	font-weight: 400;
+	text-align: center;
+}
+.crime-form {
+	margin-top: 34px;
+	padding: 24px;
+	min-width: 500px;
+}
+.form-map {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+.submit-button {
+	font-size: 14px !important;
+	margin-top: 10px !important;
+}
+.logo {
+	font-size: 22px;
+}
+
+.info-container {
+	margin: 24px;
+}
+
+.info-container h1 {
+	font-size: 18px;
+}
+
+.info-container p {
+	font-size: 14px;
+}
+.info-container li {
+	font-size: 14px;
+}
+.marker-info h3 {
+	font-size: 16px !important;
+	line-height: 1.2 !important;
+}
+.marker-info p {
+	display: inline;
+	font-weight: normal;
+}

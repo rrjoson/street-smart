@@ -1,0 +1,119 @@
+<html ng-app="CodeVaders">
+<head>
+  <title>STREET SMART</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+
+  <link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+  <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+  <link rel="import" href="bower_components/iron-icons/iron-icons.html">
+  <link rel="import" href="bower_components/paper-input/paper-input.html">
+  <link rel="import" href="bower_components/paper-card/paper-card.html">
+  <link rel="import" href="bower_components/paper-item/paper-item.html">
+
+  <link rel="import" href="bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+  <link rel="import" href="bower_components/paper-menu/paper-menu.html">
+  <link rel="import" href="bower_components/iron-flex-layout/classes/iron-flex-layout.html">
+  <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="bower_components/paper-button/paper-button.html">
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="main-map">
+ <!--  <div class="navbar row">
+    <div class=" navbar1">
+      <a href="#!" class="hamburger">☰</a>
+      <a href="map.html" class="links">CRIME MAPS</a>
+      <a href="nearby.html" class="links">NEARBY</a>
+      <a href="statistics.html" class="links">STATISTICS</a>
+    </div>
+    <div class="navbar2" style="background-color: #1abc9c">
+      <a href="form.html" class="links">REPORT A CRIME</a>
+      <a href="contact.html" class="links add-margin-right-20px">CONTACT US</a>
+    </div>
+  </div>
+  <div class="hide" id="push-menu">
+    <img class="profile-pic img-responsive" src="images/vader.jpg">
+    <h1 class="profile-name">DARTH VADER</h1>
+    <div class="row profile-nav">
+      <a href="profile.html">> PROFILE</a>
+      <a href="form.html">> REPORTS</a>
+      <a href="settings.html">> SETTINGS</a>
+      <a class="logout" href="index.html">> LOG-OUT</a>
+    </div>
+  </div> -->
+   <paper-header-panel style="background-color: #eee;" ng-controller="form-controller">
+        <paper-toolbar>
+          <a href="map.html" class="white"><paper-icon-button icon="arrow-back"></paper-icon-button></a>
+        </paper-toolbar>
+        <div class="card-container">
+          <paper-card class="crime-form">
+            <div class="header style-scope paper-card">
+              <div class="title-text style-scope paper-card">Report a Crime</div>
+            </div>
+            <paper-input label="Name"></paper-input>
+
+            <paper-input id="due_input" label="Date" type="date" value=" " ng-model="report.time" required></paper-input>
+            <paper-input label="Type of Crime" ng-model="report.crime" value="Homicide/Kidnapping/Robbery" required></paper-input>
+
+            <!-- <paper-dropdown-menu label="Type of Crime" ng-model="report.crime" required>
+              <paper-menu class="dropdown-content">
+                <paper-item>Kidnapping</paper-item>
+                <paper-item>Homicide</paper-item>
+                <paper-item>Robbery</paper-item>
+              </paper-menu>
+            </paper-dropdown-menu>
+
+            <paper-dropdown-menu label="My Items">
+                   <paper-dropdown class="dropdown">
+                       <paper-menu class="menu" ng-model="my.item">
+
+                           <paper-item ng-repeat="item in items" name="{{item.name}}">
+                               {{item.name}}
+                           </paper-item>
+
+
+                       </paper-menu>
+                   </paper-dropdown>
+               </paper-dropdown-menu> -->
+
+
+
+            <paper-input id="pac-input2" type="text" label="Search Location"></paper-input>
+            <div class="form-map" id="map" style="width:100%; height: 50%"></div>
+            <paper-input label="Description" ng-model="report.desc" required></paper-input>
+            <paper-button class="submit-button" ng-click="AddReport()" raised="" role="button" tabindex="0" animated="" aria-disabled="false" elevation="1" class="x-scope paper-button-0">Submit</paper-button>
+            <div class="hide">
+              Longitude:
+              <input type="text" ng-model="report.longitude" readonly id="lngbox">
+              Latitude:
+              <input type="text" ng-model="report.latitude" readonly id="latbox">
+            </div>
+          </paper-card>
+        </div>
+      </paper-header-panel>
+
+  <script type="text/javascript" src="/angular/angular.js"></script>
+  <script src="/plugins/ng-polymer-elements/ng-polymer-elements.min.js"></script>
+  <script type="text/javascript" src="/markerclusterer/markerclusterer.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places"></script>
+  <script src="/plugins/heatmap.js"></script>
+  <script src="/plugins/gmaps-heatmap.js"></script>
+  <script type="text/javascript" src="/client-controllers/app.js"></script>
+  <script type="text/javascript" src="/client-controllers/client-controller.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+  <script type="text/javascript">
+    paperMenu: {
+       ngModel: {
+           primitive: "selected"
+       },
+       ngTap: {
+           event: "core-activate"
+       }
+    }
+
+  </script>
+</body>
+</html>
