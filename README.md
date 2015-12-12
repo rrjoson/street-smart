@@ -2,9 +2,13 @@
 A Navigational reference for smart travelling and crowd-sourcing app for crime reporting.
 
 ## Screenshots
-[Screenshot #1](https://files.slack.com/files-pri/T0F20S3T7-F0F2M2SHM/main-map-with_info2.jpg)
-[Screenshot #2](https://files.slack.com/files-pri/T0F20S3T7-F0F2M1QJ2/6-side-bar.jpg)
-[Screenshot #3](https://files.slack.com/files-pri/T0F20S3T7-F0F2EBSAF/login_sample.jpg)
+[Screenshot #1](https://raw.githubusercontent.com/memerr/Street-Smart/master/screenshots/Screenshot%231.png)
+[Screenshot #2](https://github.com/memerr/Street-Smart/blob/master/screenshots/Screenshot%232.png?raw=true)
+
+## How to run:
+* Navigate to the project folder
+* Open your Terminal
+* Run "node server"
 
 ## Tech Used
 * Google Maps API
